@@ -16,6 +16,15 @@ function ransomNote(noteText, magazineText) {
         magTable[word]++;
     });
 
+    // Loop the note array and decrement
+    // The value in the lookup table.
+    noteArr.forEach(word => {
+        if (!magTable[word]) {
+            return false;
+        }
+        magTable[word]--;
+    });
+
     return true;
 }
 
