@@ -12,7 +12,7 @@ The Big O notation is used to describe the efficiency and complexity of an algor
 
 - **O (big O):**  In academia, big O describes an upper bound on the time. An algorithm that prints all the
   values in an array could be described as ` O(N)`, but it could also be described as `O(N2)`, `O(N3)`, or `0(2N)`. The algorithm is at least as fast as each of these; therefore they are upper bounds on the runtime.
--  **Ω (big omega):** In academia, Ω is the equivalent concept but for lower bound. Printing the values in
+- **Ω (big omega):** In academia, Ω is the equivalent concept but for lower bound. Printing the values in
   an array is `Ω(N)` as well as `Ω(log N)` and `Ω(1)`. After all, you know that it won't be faster than those
   runtimes.
 - **ϴ (big theta):** In academia, ϴ means both O and Ω. That is, an algorithm is `ϴ(N)` if it is both `O(N)` and
@@ -29,7 +29,13 @@ Big 0, big omega, and big theta describe the upper, lower, and tight bounds for 
 
 O(1) describes an algorithm that will always execute in the same time (or space) regardless of the size of the input data set.
 
+### O(N)
 
+O(N) describes an algorithm whose performance will grow linearly and in direct proportion to the size of the input data set.
+
+### O(N^2)
+
+O(N2) represents an algorithm whose performance is directly proportional to the square of the size of the input data set. This is common with algorithms that involve nested iterations over the data set. Deeper nested iterations will result in O(N3), O(N4) etc.
 
 #### References
 
